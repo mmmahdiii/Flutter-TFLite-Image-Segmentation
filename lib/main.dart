@@ -129,7 +129,7 @@ class _TfliteHomeState extends State<TfliteHome> {
 
     // when the app is first launch usually image width and height will be null
     // therefore for default value screen width and height is given
-    if(_imageWidth == null && _imageHeight == null) {
+    if(_imageWidth == null || _imageHeight == null) {
       finalW = size.width;
       finalH = size.height;
     }else {
